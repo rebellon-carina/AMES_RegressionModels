@@ -86,7 +86,7 @@ We sampled 3 different neighborhood with different Overall Qual rating and how t
 
 # Regression Models for all features
 
-Several models were built with Polynomial Features using cross_validate, LassoCV, RidgeCV, ElasticNetCV and also used RandomSearchCV to search for the optimal aplha. Below is the summary of the result for each regression models, with 79 fields (3,159 after Polynomial features are added). Ridge with alpha of 453.53 have the highest score (r2) and lowest root mean squared error (rmse)
+Several models were built with Polynomial Features using cross_validate, LassoCV, RidgeCV, ElasticNetCV and also used RandomSearchCV to search for the optimal alpha. Below is the summary of the result for each regression models, with 79 fields (3,159 after Polynomial features are added). Ridge with alpha of 453.53 have the highest score (r2) and lowest root mean squared error (rmse)
 
 ![Regression Models](image/regression_model_summary.png?raw=true "Regression Models")
 
@@ -111,7 +111,7 @@ For the top 10 features, we used forward and backward stepwise selection, and co
 
 # Summary and Recommendation:
 
-***Data Science Summary and Recommendation:*** *Recommendation is limited to the scope of this project*. Subset selection seems to be a good consideration for feature selections. Polynomial features help increase the prediction accuracy, however the models are more difficult to interpret.
+***Data Science Summary and Recommendation:*** *Recommendation is limited to the scope of this project*. Subset selection seems to be a good consideration for feature selections. Polynomial features help increase the prediction accuracy, however the models are more difficult to interpret. Linear Regression with polynomial features performs best in train dataset, but poorly in the test dataset, means that it is overfitting. It is better to use Ridge and Lasso models for datasets with Polynomial features.
 
 ***Business Problem Summary and Recommendation:***  Buyer can choose Neighborhood with slightly above average overall quality and price is below average.
 For more details, please refer to "Project 2 _ Ames Housing Data and Kaggle Challenge.pptx"
