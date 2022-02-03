@@ -57,7 +57,7 @@ AMES_RegressionModels
 
 ## Top 10 features (Numerical Variables) after Cleanup and Imputation
 
-<img  src="image/top10_eda.png" width=400 height=400/>
+<img  src="image/top10_eda.png" width=500 height=500/>
 
 # EDA
 For EDA, we focus on the Overall Qual, as this is the feature with highest correlation with SalePrice.
@@ -82,7 +82,7 @@ We sampled 3 different neighborhood with different Overall Qual rating and how t
 
 ## Top 10 features (after feature engineering)
 
-<img  src="image/top10_featureEng.png" width=400 height=400/>
+<img  src="image/top10_featureEng.png" width=500 height=500/>
 
 # Regression Models for all features
 
