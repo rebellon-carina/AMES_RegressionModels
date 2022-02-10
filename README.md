@@ -74,11 +74,11 @@ We sampled 3 different neighborhood with different Overall Qual rating and how t
   - ***Ordinal Features*** are transformed using the dictionary that shows their ordinal values (manually created)
    - ***Nominal Features*** are transformed using the dictionary that is automtically created from train dataset by  ranking the the mean of SalePrice, the same dictionary is used for Test, if the value is not in the train dataset, it will populate as 0
 
-   - Feature Engineering:
-     - ***HouseAge*** is calculated based on the Year the house is build, minus the Year it was sold.
-     - ***Total_SF*** =  We added 'Gr Liv Area' and 'Total Bsmt SF'
-     - ***Remodel_Age*** = 'Year Remod/Add' minus the 'Year Built'
-     - ***is_Remodeled*** = if the Remodel_Age is not zero and the renovation age is between 1-5, then 1 (True), else 0 (False)
+ - Feature Engineering:
+   - ***HouseAge*** is calculated based on the Year the house is build, minus the Year it was sold.
+   - ***Total_SF*** =  We added 'Gr Liv Area' and 'Total Bsmt SF'
+   - ***Remodel_Age*** = 'Year Sold' minus the 'Year Remod/Add' 
+   - ***is_Remodeled*** = if the Remodel_Age <=5 then 1 (Yes), else 0 (No)
 
 ## Top 10 features (after feature engineering)
 
